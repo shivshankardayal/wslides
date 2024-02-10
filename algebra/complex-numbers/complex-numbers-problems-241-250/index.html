@@ -58,7 +58,7 @@
     </header>
 
     <main role="main">
-      <article class="vertical">
+      <article id="webslides" class="vertical">
         <section>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap stide-top">
@@ -73,26 +73,42 @@
           <!--.wrap = container (width: 90%) -->
           <div class="wrap stide-top">
              <p style="font-size:24px">
-               <b>Solution.</b> Consider two complex numbers $z_1 = a_1 + ib_1$ and $z_2 = a_2 + ib_2.$ Now we have to prove $|z_1 +
+               <b>Solution:</b> Consider two complex numbers $z_1 = a_1 + ib_1$ and $z_2 = a_2 + ib_2.$ Now we have to prove $|z_1 +
   z_2| \le |z_1| + |z_2|$ which can be further extended to prove the result.
              </p>
 	     <p style="font-size:24px">
   $\Rightarrow \sqrt{(a_1 + a_2)^2 + (b_2 + b_2)^2} \le \sqrt{a_1^2 + b_1^2} + \sqrt{a_2^2 +
   b_2^2}$.</p>
 	     <p style="font-size:24px">Squaring both sides and simplifying
-             </p>
+       </p>
 	     <p style="font-size:24px">
   $\Rightarrow a_1a_2 + b_1b_2 \le \sqrt{(a_1^2 + b_1^2)(a_2^2 + b_2^2)} \Rightarrow (a_1a_2 + b_1b_2)^2 -
   (a_1^2 + b_1^2)(a_2^2 + b_2^2) \le 0\Rightarrow -(a_1b_2 - a_2b_1)^2 \le 0$.
 	     </p>
           </div>
-          <!-- .end .wrap -->
+        </section>
+        <!-- .end .wrap -->
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap stide-top">
+             <p style="font-size:24px">
+               <b>242.</b> Let $\left|\frac{\overline{z_1} - 2\overline{z_2}}{2 - z_1\overline{z_2}}\right| = 1$ and $|z_2|\neq 1$, where $z_1$ and
+  $z_2$ are complex nubers, show that $|z_1| = 2$.
+             </p>
+          </div>
         </section>
         <section>
           <!--.wrap = container (width: 90%) -->
           <div class="wrap stide-top">
              <p style="font-size:24px">
-               <b>242.</b>
+               <b>Solution:</b> Given, $\left|\frac{\overline{z_1} - 2\overline{z_2}}{2 - z_1\overline{z_2}}\right| = 1\Rightarrow
+  |\overline{z_1} - 2\overline{z_2}|^2 = |2 - z_1\overline{z_2}|^2$
+
+  $\Rightarrow (\overline{z_1} - 2\overline{z_2})(z_1 - 2z_2) = (2 - z_1\overline{z_2})(2 -
+  \overline{z_1}z_2) \Rightarrow |z_1|^2 - 2z_1\overline{z_2} - 2\overline{z_1}z_2 + |z_1|^2|z_2|^2 = 4 -
+  2z_1\overline{z_2} - 2\overline{z_1}z_2+ |z_1|^2|z_2|^2$
+
+  $\Rightarrow |z_1|^2|z_2|^2 - 4|z_2|^2 - |z_1|^2 - 4 = 0 \Rightarrow |z_2| = 2\;\because |z_1|\neq 1$.
              </p>
           </div>
         </section>
@@ -102,7 +118,7 @@
     <!-- end main -->
 
     <!-- Required -->
-    <script src="../../../static/js/webslides.min.js"></script>
+    <script src="../../../static/js/webslides.js"></script>
     <script>
       window.ws = new WebSlides();
     </script>
