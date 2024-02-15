@@ -76,9 +76,9 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">251.</span> If $\alpha, \beta, \gamma, \delta$ be the real
-            roots of the equation $ax^4 + bx^3 + cx^2 + dx + e = 0$, show that $a^2(1 +
-            \alpha^2)(1 + \beta^2)(1 + \gamma^2)(1 + \delta^2) = (a - c + e)^2 + (b - d)^2$.
+            <span style="font-weight: bold;">281.</span> Show that the triangles whose vertices are
+            $z_1, z_2, z_3$ and $z_1', z_2', z_3'$ are similar if $\begin{vmatrix}
+            z_1 & z_1' & 1\\ z_2 & z_2' & 1\\ z_3 & z_3' & 1\end{vmatrix} = 0$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -87,31 +87,21 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> Since $\alpha, \beta, \gamma, \delta$
-            are roots of the equation. $\therefore a(x - \alpha)(x - \beta)(x
-            - \gamma)(x - \delta) = ax^4 + bx^3 + cx^2 + dx + e$.
+            <img src="1.webp" class="alignleft" />
+            <span style="font-weight: bold;">Solution:</span> $\triangle ABC$ and $\triangle PQR$ will
+            be similar if all their angles are equal and ratios of sides as
+            well.
           </p>
           <p style="font-size:24px">
-            Substituting $x = i$, we get following
+            $arg\left(\frac{z_3 - z_1}{z_2 - z_1}\right) = arg\left(\frac{{z^\prime}_3 - {z^\prime}_1}{{z^\prime}_2 -
+            {z^\prime}_1}\right)$
           </p>
           <p style="font-size:24px">
-            $a(i - \alpha)(i - \beta)(i - \gamma)(i - \delta) = ai^4 + bi^3 + ci^2 + di + e \Rightarrow a(1 + i\alpha)(1
-            + i\beta)(1 + i\gamma)(1 + i\delta) = a - ib - c + id + e$.
+            $\frac{AB}{PQ} = \frac{AC}{PR}$ or $\frac{AC}{AB} = \frac{PR}{PQ}$ or $\frac{z_3 - z_1}{z_2 - z_1} =
+            \frac{{z^\prime}_3 - {z^\prime}_1}{{z^\prime}_2 - {z^\prime}_1}$
           </p>
           <p style="font-size:24px">
-            Taking modulus and squaring we get our desired result.
-          </p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap stide-top">
-          <p style="font-size:24px">
-            <span style="font-weight: bold;">252.</span> If $a_i\in R, i = 1, 2, \ldots, n$ and $\alpha_1,
-            \alpha_2, \ldots, \alpha_n$ are the roots of the equation $x^n + a_1x^{n -
-              1} + a_2x^{n - 2} + \ldots + a_{n- 1}x + a_n = 0$, show that $\displaystyle\prod_{i = 1}^n(1 + \alpha_i^2)
-              = (1 - a_2 + a_4 - \ldots)^2 + (a_1 - a_3 + \ldots)^2$.
+            Simplifying these two equations gives us our determinant.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -120,19 +110,9 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> $\because \alpha_1, \alpha_2, \ldots, \alpha_n$ are the roots of the given equation.
-          </p>
-          <p style="font-size:24px">
-            $\therefore (x -
-            \alpha_1)(x - \alpha_2)\cdots(x - \alpha_n) = x^n + a_1x^{n - 1} + a_2x^{n - 2} + \ldots + a_{n- 1}x +
-            a_n= 0$.
-          </p>
-          <p style="font-size:24px">
-            Substituting $x = i$, we get following $(i - \alpha_1)(i - \alpha_2)\cdots(i - \alpha_n) = i^n + a_1i^{n -
-              1} + a_2i^{n - 2} + \ldots + a_{n- 1}i +a_n$.
-          </p>
-          <p style="font-size:24px">
-            Taking modulus and squaring we get our desired result.
+            <span style="font-weight: bold;">282.</span> If $a, b, c$ and $u, v, w$ are the complex
+            numbers representing two triangles such that $c = (1 - r)a + rb$ and $w = (1 - r)u
+            + rv$, where $r$ is a complex number, prove that the two triangles are similar.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -141,9 +121,10 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">253.</span> If the complex numbers $z_1, z_2, z_3$ are the
-            vertices of an equilateral triangle such that $|z_1| = |z_2| = |z_3|$, prove
-            that $z_1 + z_2 + z_3 = 0$.
+            <span style="font-weight: bold;">Solution:</span> From these two equation we have
+            $r = \frac{c - a}{b - a}$ and $r = \frac{\omega - u}{v -u}$. Equating
+            these two equations and taking modulus and argument, it follows from the previous
+            problem that the two triangles are similar.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -152,15 +133,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> Let $|z_1| = |z_2| = |z_3| = R. \therefore$
-            Origin is the circumcenter of triangle.
-          </p>
-          <p style="font-size:24px">
-            Since triangle is
-            also equilateral circumcenter and origin coincide. Therefore, origin is also centroid. Thus,
-          </p>
-          <p style="font-size:24px">
-            $\frac{z_1 + z_2 + z_3}{3} = 0 \Rightarrow z_1 + z_2 + z_3 = 0$.
+            <span style="font-weight: bold;">283.</span> Find the equation of perpendicular bisector
+            of the line segment joining points $z_1$ and $z_2$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -169,9 +143,14 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">254.</span> If $z_1 + z_2 + z_3 = 0$ and $|z_1| = |z_2| = |z_3| = 1$,
-            then prove that the complex numbers $z_1,
-            z_2, z_3$ are the vertices of an equilateral triangle inscribed in a unit circle.
+            <span style="font-weight: bold;">Solution:</span> We know that points on a perpendicular
+            bisector is equidistant from the two points of the line to
+            which it is perperndicular bisector.
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow |z - z_1| = |z - z_2| \Rightarrow |z - z_1|^2 = |z - z_2|^2 \Rightarrow (z -
+            z_1)(\overline{z} - \overline{z_1}) = (z - z_2)(\overline{z} - \overline{z_2})$, which can be written in
+            the form of $\overline{a}z + a\overline{z} + b = 0$, which is equation of a straight line.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -180,13 +159,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution: </span> $z_1 + z_2 + z_3 = 0$ implies centroid of the
-            triangle is the origin. Circumcenter is also origin as
-            $z_i$ lies on the circle $|z| = 1$.
-          </p>
-          <p style="font-size:24px">
-            Hence, circumcenter is same as centroid making the triangle an
-            equilateral triangle having circumcircle with unit radius.
+            <span style="font-weight: bold;">284.</span> Find the equation of a circle having the line
+            segment joining $z_1$ and $z_2$ as diameter.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -195,8 +169,11 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">255.</span> If $z_1, z_2, z_3$ be the vertices of an equilateral
-            triangle whose circumcenter is $z_0$, then prove that $z_1^2 + z_2^2 + z_3^2 = 3z_0^2$.
+            <span style="font-weight: bold;">Solution:</span> Mid-point of such a diameter is
+            $\frac{z_1 + z_2}{2}$. Let $P$ be a point lying on this circle, which,
+            is represented by complex number $z$. Thus, the equation of circle is $\left|z - \frac{z_1 +
+            z_2}{2}\right| = \left|z_1 - \frac{z_1 + z_2}{2}\right|$ or $\left|z - \frac{z_1 + z_2}{2}\right| =
+            \left|z_2 - \frac{z_1 + z_2}{2}\right|$. Square and simplify to arrive at the equation.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -205,14 +182,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution: </span> Since the triangle is equilateral therefore
-            the circumcenter and centroid will be same i.e. $z_0 =
-            \frac{z_1 + z_2 + z_3}{3}$. Also for equilateral triangle, $z_1^2 + z_2^2 + z_3^2 = z_1z_2 + z_2z_3 +
-            z_3z_1$.
-          </p>
-          <p style="font-size:24px">
-            Squaring the first equation $9z_0^2 = z_1^2 + z_2^2 + z_3^2 + 2(z_1z_2 + z_2z_3 + z_3z_2) = z_1^2 + z_2^2
-            + z_3^2 + 2(z_1^2 + z_2^2 + z_3^2) \Rightarrow z_1^2 + z_2^2 + z_3^2 = 3z_0^2$.
+            <span style="font-weight: bold;">285.</span> If $\left|\frac{z - z_1}{z -
+            z_2}\right| = c, c\neq 0,$ then show that locus of $z$ is a circle.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -221,8 +192,13 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">256.</span> Prove that the complex numbers $z_1$ and $z_2$
-            and the origin form an equilateral triangle if $z_1^2 + z_2^2 - z_1z_2 = 0$.
+            <span style="font-weight: bold;">Solution:</span> The equation can be written as $\left|z - z_1\right| =
+            c\left|z - z_2\right|$, which, when substituted
+            with $z_1 = x_1 + iy_1$ and $z_2 = x_2 + iy_2$ gives following
+          </p>
+          <p style="font-size:24px">
+            $\left|(x - x_1) + i(y - y_1)\right| = c\left|(x - x_2) + i(y - y_2)\right| \Rightarrow (x - x_1)^2 + (y -
+            y_1)^2 = c^2\{(x - x_2)^2 + (y - y_2)^2\}$, which is equation of a circle.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -231,8 +207,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> Since $z_1, z_2$ and origin form an equilateral triangle we have
-            $z_1^2 + z_2^2 + 0^2 - z_1z_2 - z_2.0 - z_1.0 = 0$. Hence, proven.
+            <span style="font-weight: bold;">286.</span> If $|z| = 1,$ find the locus of the point
+            $\frac{2}{z}$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -241,9 +217,9 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">257.</span> If $z_1$ and $z_2$ be the roots of the equation
-            $z^2 + az + b = 0$, then prove that the origin, $z_1$ and $z_2$ form an
-            equilateral triangle if $a^2 = 3b$.
+            <span style="font-weight: bold;">Solution:</span> Given, $|z| = 1 \Rightarrow
+            2z\overline{z} = 2 \Rightarrow \frac{2}{z} = 2\overline{z}$ which gives us
+            a circle.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -252,9 +228,8 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> From previous probelm $z_1, z_2$ and origin
-            will form a triangle if $z_1^2 + z_2^2 - z_1z_2 = 0.$
-            Therefore,  $(z_1 + z_2)^2 = 3z_1z_2 \Rightarrow a^2 = 3b$.
+            <span style="font-weight: bold;">287.</span> If for any two complex numbers $z_1$ and
+            $z_2, |z_1 + z_2| = |z_1| + |z_2|$, prove that $\arg(z_1) - \arg(z_2) = 2n\pi$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -263,10 +238,16 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">258.</span> Let $z_1, z_2$ and $z_3$ be the roots of the equation
-            $z^3 + 3\alpha z^2 + 3\beta z + \gamma = 0$, where $\alpha, \beta$ and
-            $\gamma$ are complex numbers and that these represent the vertices of $A, B$ and $C$ of a triangle. Find the centroid of
-            $\triangle ABC$. Show that the triangle will be equilateral, if $\alpha^2 = \beta$.
+            <span style="font-weight: bold;">Solution:</span> Let $z_1 = r_1(\cos\theta_1 +
+            i\sin\theta_1)$ and $z_2 = r_2(\cos\theta_2 + i\sin\theta_2)$. Then
+            L.H.S. $= \left|z_1 + z_2\right|$ $\Rightarrow \left|z_1 + z_2\right|^2 = {r^2}_1 + {r^2}_2 +
+            2r_1r_2\cos(\theta_1 - \theta_2)$.
+          </p>
+          <p style="font-size:24px">
+            Similarly, $\left(\left|z_1\right| + \left|z_1\right|\right)^2 = \left({r^2}_1 + {r^2}_2 + 2r_1r_2\right)$.
+          </p>
+          <p style="font-size:24px">
+            Thus, $\cos(\theta_1 - \theta_2) = 0$ $\Rightarrow \arg(z_1) - \arg(z_2) = 2n\pi$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -275,14 +256,22 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> Since $z_1, z_2, z_3$ are roots of the
-            equation $z^3 + 3\alpha z^2 + 3\beta z + \gamma = 0\Rightarrow
-            z_1 + z_2 + z_3 = -3\alpha, z_1z_2 + z_2z_3 + z_3z_1 = 3\beta$ and $z_1z_2z_3 = -\gamma$.
+            <span style="font-weight: bold;">288.</span> Find the complex number $z$, the least in absolute
+            value, which satisfies the condition $|z - 2 + 2i| = 1$.
           </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap stide-top">
+          <img src="2.webp" class="alignleft">
           <p style="font-size:24px">
-            Centroid is given by $\frac{z_1 + z_2 + z_3}{3} = -\alpha$. Triangle will be equilateral if $z_1^2 + z_2^2
-            + z_3^3 = z_1z_2 + z_2z_3 + z_3z_1 \Rightarrow (z_1 + z_2 + z_3)^2 = 3(z_1z_2 + z_2z_3 + z_3z_1)
-            \Rightarrow \alpha^2 = \beta$.
+            <span style="font-weight: bold;">Solution:</span> The equation $\left|z - 2 + 2i\right| = 1$
+            represents a circle with center at $(2, -2i)$ with unity
+            radius. Since, the line between $(2, -2i)$ and origin will make an angle of $45^\circ$.
+            Therefore, $P$ is
+            $2 - \frac{1}{\sqrt{2}} + i(\frac{1}{\sqrt{2}} -2)$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -291,7 +280,28 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">259.</span> If $z_1, z_2, z_3$ are in A.P., prove that they are collinear.
+            <span style="font-weight: bold;">289.</span> Find the point in the first quadrant, on the curve
+            $|z - 5i| = 3$, whose argument is minimum.
+          </p>
+        </div>
+        <!-- .end .wrap -->
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap stide-top">
+          <img src="3.webp" class="alignleft">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Given equation is a circle with center
+            $(0, 5)$ and radius $3 \therefore OC = 5, CP = 3$.
+          </p>
+          <p style="font-size:24px">
+            The point having
+            least argument will have a tangent from origin which makes $\triangle OCP$ right angle
+            triangle.
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow CP = 4\Rightarrow \tan\theta = \frac{4}{3}$. Therefore, the point would be
+            $4(\cos\theta + i\sin\theta) = \frac{12}{5} + \frac{16i}{5}$.
           </p>
         </div>
         <!-- .end .wrap -->
@@ -300,9 +310,9 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> Given $2z_2 = z_1 + z_3$. Clearly, from section formula
-            we can deduce that $z_2$ divides line segment
-            joining $z_1$ and $z_3$ in two equal segments hence the complex numbers are collinear.
+            <span style="font-weight: bold;">290.</span> Find the set of points of the cooradinate
+            plane, which satisfy the inequality
+            $\log_{1/2}\left(\frac{|z - 1| + 4}{3|z - 1| - 2}\right) > 1$
           </p>
         </div>
         <!-- .end .wrap -->
@@ -311,23 +321,12 @@
         <!--.wrap = container (width: 90%) -->
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">260.</span> If $z_1, z_2$ and $z_3$ are collinear points in argand
-            plane then show that one of the following holds: $-z_1|z_2 - z_3| +
-            z_2|z_3 - z_1| + z_3|z_1 - z_2| = 0, z_1|z_2 - z_3| - z_2|z_3 - z_1| + z_3|z_1 - z_2| = 0, z_1|z_2 - z_3| + z_2|z_3 - z_1| -
-            z_3|z_1 - z_2| = 0$.
+            <span style="font-weight: bold;">Solution:</span> From given equation,
+            $\left(\frac{\left|z-1\right| + 4}{3\left|z - 1\right| - 2}\right) &lt; \frac{1}{2}$
           </p>
-        </div>
-        <!-- .end .wrap -->
-      </section>
-      <section>
-        <!--.wrap = container (width: 90%) -->
-        <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> If $z_1, z_2, z_3$ are collinear then either $z_2$
-            divides $z_1z_3$ internally/externally or $z_3$
-            divides $z_1z_2$ internally/externally. Now we can apply the condition for collinearity
-            i.e. $\begin{vmatrix} z_1& z_2 & z_3\\ \overline{z_1} & \overline{z_2} &
-            \overline{z_3}\\ 1& 1& 1\end{vmatrix} = 0$ and hence we can show desired conditions.
+            $\Rightarrow |z - 1| > 10$. This represents area which lies outside a circle with center at $(1, 0)$ and
+            radius $10$.
           </p>
         </div>
         <!-- .end .wrap -->
