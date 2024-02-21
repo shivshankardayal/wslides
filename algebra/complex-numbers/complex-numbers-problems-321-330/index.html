@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Algebra: Complex Numbers</title>
+  <meta name="description" content="Class 12 Algebra.">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../../../static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../../../static/css/custom.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../../../static/css/svg-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <!--meta property="og:url" content="http://your-url.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy">
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma.">
+    <meta property="og:updated_time" content="2017-01-04T17:20:50">
+    <meta property="og:image" content="../../../static/images/share-webslides.jpg"-->
+
+  <!-- TWITTER -->
+  <!--meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides">
+    <meta name="twitter:creator" content="@jlantunez">
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy">
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"-->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../../../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../../../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../../../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../../../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../../../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../../../static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYSBZJJRBL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DYSBZJJRBL');
+  </script>
+
+</head>
+
+<body>
+  <header role="banner" style="background-color: #eee!important;">
+    <nav role="navigation">
+      <p><a href="/" title="Ashtavakra" style="font-size: 48px; font-weight: 333;">Ashtavakra</a></p>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="vertical bg-white">
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">311.</span> If $(1 + x)^n = p_0 + p_1x + p_2x^2 + \ldots +
+            p_nx^n$, show that $p_0 - p_2 + p_4 - \ldots = 2^{n/2}\cos\frac{n\pi}{4}$ and
+            $p_1 - p_3 + p_5 - \ldots = 2^{n/2}\sin\frac{n\pi}{4}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Given, $(1 + x)^n = p_0 + p_1x + p_2x^2 +
+            \cdots + p_nx^n$. Putting $x = i$, we get $(1 + i)^n = p_0 + p_1i + p_2i^2 + \cdots + p_ni^n$
+          </p>
+          <p style="font-size:24px">
+            $= (p_0 - p_2 + p_4 - \cdots) + i(p_1 - p_3 + p_5 - \cdots)\Rightarrow \left[\sqrt{2}\left(\cos\frac{\pi}{4}
+            +
+            i\sin\frac{\pi}{4}\right)\right]^n = (p_0 - p_2 + p_4 - \cdots) + i(p_1 - p_3 + p_5 - \cdots)$
+          </p>
+          <p style="font-size:24px">
+            Equating real and imaginary parts, we have $p_0 - p_2 + p_4 \cdots = 2^{\frac{n}{2}}\cos\frac{n\pi}{4}$ and
+            $p_1 - p_3 + p_5 + \cdots = 2^{\frac{n}{2}}\sin\frac{n\pi}{4}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">312.</span> If $(1 - x + x^2)^n = a_0 + a_1x + a_2x^2 +
+            \ldots + a_{2n}x^{2n}$, show that $a_0 + a_3 + a_6 + \ldots = \frac{1}{3}\left(1
+            + 2^{n + 1}\cos\frac{n\pi}{3}\right)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Given, $(1 - x + x^2)^n = a_0 + a_1 +
+            a_2x^2 + \cdots a_{2n}x^{2n}$. Putting $x = 1, \omega$ and $\omega^2$, we get
+          </p>
+          <p style="font-size:24px">
+            $1 = a_0 + a_1 + a_2 + \cdots + a_{2n}, (-2\omega)^n = a_0 + a1\omega + a_2\omega^2 + \cdots +
+            a_{2n}\omega^{2n}, (-2\omega^2)^n = a_0 + a_1\omega^2 + a_2\omega^4 + \cdots +
+            a_{2n}\omega^{4n}$
+          </p>
+          <p style="font-size:24px">
+            Adding these we get, $3(a_0 + a_3 + a_6 + \cdots) = 1 + (-2)^n(\omega^n + \omega^{2n})$. Now $\omega =
+            \frac{-1 + \sqrt{3}i}{2} = \left(\cos\frac{2\pi}{3} + i\sin \frac{2\pi}{3}\right)$
+          </p>
+          <p style="font-size:24px">
+            $\omega^n = \cos\frac{2n\pi}{3} + i\sin\frac{2n\pi}{3}$. Now $\omega^2 = \frac{-1 - \sqrt{3}i}{2} =
+            \left(\cos\frac{2\pi}{3} - i\sin \frac{2\pi}{3}\right)\therefore \omega^n + \omega^{2n} =
+            2\cos\frac{2n\pi}{3} = 2\cos\left(n\pi - \frac{n\pi}{3}\right)$
+          </p>
+          <p style="font-size:24px">
+            $= 2(-1)^n\cos\frac{n\pi}{3}$. Thus, $3(a_0 + a_3 a_6 + \cdots) = 1 + (-2)^n2(-1)^n\cos\frac{n\pi}{3} = 1
+            +2^{n + 1}\cos\frac{n\pi}{3}$.
+            $\Rightarrow a_0 + a_3 + a_6 + \cdots = \frac{1}{3}\left(1 + 2^{n+1}\cos\frac{n\pi}{3}\right)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">313.</span> If $n$ is a positive integer and $(1 + x)^n =
+            c_0 + c_1x + c_2x^2 + \ldots + c_nx^n$, show that $c_0 + c_4 + c_8 + \ldots =
+            2^{n - 2} + 2^{n/2 - 1}\cos\frac{n\pi}{4}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Given, $(1 + x)^n = c_0 + c_1x + c_2x^2 +
+            \cdots + c_nx^n$. Putting $x = 1$ and $x = -1$, we get $2^n = c_0 + c_1 + c_2 + \cdots + c_n$
+          </p>
+          <p style="font-size:24px">
+            and $0 = c_0 - c_1 + c_2 - \cdots + (-1)^nc_n$. Adding these two, we get $2^n = 2(c_0 + c_2 + c_4 +
+            \cdots)$ or $c_0 + c_2 + c_4 + \cdots = 2^{n - 1}$
+          </p>
+          <p style="font-size:24px">
+            Putting $x = i$, we get $(1 + i)^n = c_0 + c_1i + c_2i^2 + c_3i^3 + \cdots + c_ni^n\Rightarrow
+            \left[\sqrt{2}\left(\cos\frac{\pi}{4}+i\sin\frac{\pi}{4}\right)\right]^n = (c_0 -c_2 + c_4 - \cdots) +
+            i(c_1 - c_3 + \cdots)$
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow 2^{\frac{n}{2}}\left(\cos\frac{n\pi}{4}+i\sin\frac{i\pi}{4}\right) = (c_0 -c_2 + c_4 - \cdots)
+            + i(c_1 - c_3 + \cdots)$
+          </p>
+          <p style="font-size:24px">
+            Equating real parts, we get $c_0 - c_2 + c_4 - \cdots = 2^{\frac{n}{2}}\cos\frac{n\pi}{4}$. Adding this
+            result with the one obtained previously, we have $2[c_0 + c_4 + c_8 + \cdots] = 2^{n - 1} +
+            2^{\frac{n}{2}}\cos\frac{n\pi}{4}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">314.</span> Solve the equation $z^8 + 1= 0$ and deduce that
+            $\cos4\theta = 8\left(\cos\theta - \cos\frac{\pi}{8}\right)\left(\cos\theta -
+            \cos\frac{3\pi}{8}\right)$
+            $\left(\cos\theta - \cos\frac{5\pi}{8}\right)\left(\cos\theta - \cos\frac{7\pi}{8}\right)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> $z^8 + 1 = 0 \Rightarrow z^8 = -1 =
+            \cos\pi + i \sin\pi\therefore z = (\cos\pi + i \sin\pi)^{\frac{1}{8}} =
+            \cos\frac{2r\pi + \pi}{8} + i \sin\frac{2r\pi + \pi}{8}, r = 0, 1, 2, \ldots, 7$
+          </p>
+          <p style="font-size:24px">
+            $\therefore z = \cos\frac{\pi}{8} \pm \sin\frac{\pi}{8}, \cos\frac{3\pi}{8} \pm \sin\frac{3\pi}{8},
+            \cos\frac{5\pi}{8} \pm \sin\frac{5\pi}{8}, \cos\frac{7\pi}{8} \pm \sin\frac{7\pi}{8}$
+          </p>
+          <p style="font-size:24px">
+            Now, quadratic equation whose roots are $\cos\frac{\pi}{8} \pm \sin\frac{\pi}{8},$ is $z^2 -
+            2\cos\frac{\pi}{8}z + 1 = 0$.
+            Similarly, we can find the quadratic equations for remaining three pairs of roots. Thus,
+          </p>
+          <p style="font-size:24px">
+            $z^8 + 1 = \left(z^2 - 2\cos\frac{\pi}{8}z + 1\right)\left(z^2 - 2\cos\frac{3\pi}{8}z + 1\right)\left(z^2
+            - 2\cos\frac{5\pi}{8}z + 1\right)\left(z^2 - 2\cos\frac{7\pi}{8}z + 1\right)$
+          </p>
+          <p style="font-size:24px">
+            Dividing both sides by $z^4$, we get
+
+            $z^4 + \frac{1}{z^4} = \left(z + \frac{1}{z} - 2\cos\frac{\pi}{8}\right)\left(z + \frac{1}{z} -
+            2\cos\frac{3\pi}{8}\right)\left(z + \frac{1}{z} - 2\cos\frac{5\pi}{8}\right)\left(z + \frac{1}{z} -
+            2\cos\frac{7\pi}{8}\right)$
+          </p>
+          <p style="font-size:24px">
+            Putting $z = \cos\theta + i\sin\theta$, so that $z^n + \frac{1}{z^n} = 2n\cos n\theta$, we get
+
+            $2\cos 4\theta = 2\left(\cos \theta - \cos\frac{\pi}{8}\right)2\left(\cos \theta -
+            \cos\frac{3\pi}{8}\right)2\left(\cos \theta - \cos\frac{5\pi}{8}\right)2\left(\cos \theta -
+            \cos\frac{5\pi}{8}\right)$
+          </p>
+          <p style="font-size:24px">
+            $\therefore \cos 4\theta = 8\left(\cos \theta - \cos\frac{\pi}{8}\right)\left(\cos \theta -
+            \cos\frac{3\pi}{8}\right)\left(\cos \theta - \cos\frac{5\pi}{8}\right)\left(\cos \theta -
+            \cos\frac{7\pi}{8}\right)$
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">315.</span> Prove that the roots of the equation
+            $8x^3 - 4x^2 - 4x + 1= 0$ are $\cos\frac{\pi}{7}, \cos\frac{3\pi}{7},
+            \cos\frac{5\pi}{7}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Let $z = \cos\theta + i \sin\theta$,
+            then $z^7 = \cos 7\theta + i \sin 7\theta$. If
+            $\theta = \frac{\pi}{7}, \frac{3\pi}{7}, \frac{5\pi}{7}, \frac{7\pi}{7}, \frac{9\pi}{7}, \frac{11\pi}{7},
+            \frac{13\pi}{7}$ then $z^7 = \cos 7\theta + i \sin 7\theta = 1$ or $z^7 + 1 =0$
+          </p>
+          <p style="font-size:24px">
+            Thus, $z = \cos\theta + i \sin\theta$, where $\theta = \frac{\pi}{7}, \frac{3\pi}{7}, \frac{5\pi}{7},
+            \frac{7\pi}{7}, \frac{9\pi}{7}, \frac{11\pi}{7}, \frac{13\pi}{7}$ are the roots of the equation.
+            Also, when $\theta = \pi, z = -1$. Now, $z^7 + 1 = 0 \Rightarrow (z + 1)(z^6 - z^5 + z^4 - z^3 + z^2 - z +
+            1) = 0$
+          </p>
+          <p style="font-size:24px">
+            Root of equation $z + 1 = 0$ is $\cos \theta + i \sin \theta$, where $\theta = \pi$
+            Roots of equation $z^6 - z^5 + z^4 - z^3 + z^2 - z + 1 = 0\;\;\;\;(1)$
+            are $\cos \theta + i \sin \theta,$ where $\theta = \frac{\pi}{7}, \frac{3\pi}{7}, \frac{5\pi}{7},
+            \frac{7\pi}{7}, \frac{9\pi}{7}, \frac{11\pi}{7}, \frac{13\pi}{7}$
+          </p>
+          <p style="font-size:24px">
+            Let $x = \cos \theta$, then $z + \frac{1}{z} = \cos \theta + i \sin \theta + \frac{1}{\cos \theta +
+            i \sin \theta} = 2\cos\theta = 2x$
+            But $\cos\left(\frac{13\pi}{7}\right) = cos\left(2\pi - \frac{\pi}{7}\right) = \cos\frac{\pi}{7},
+            \cos\frac{11\pi}{7} = \cos\frac{3\pi}{7}, \cos\frac{9\pi}{7} = \cos\frac{5\pi}{7}$
+          </p>
+          <p style="font-size:24px">
+            Dividing (1) by $z^3$, we get $z^3 - z^2 + z - 1 + \frac{1}{z} - \frac{1}{z^2} + \frac{1}{z^3} = 0$
+            $\left(z^3 + \frac{1}{z^3}\right) - \left(z^2 + \frac{1}{z^2}\right) + \left(z + \frac{1}{z}\right) - 1 =
+            0$
+          </p>
+          <p style="font-size:24px">
+            $\left(z + \frac{1}{z}\right)^3 - 3z.\frac{1}{z}\left(z + \frac{1}{z}\right) - \left[\left(z +
+            \frac{1}{z}\right)^2 - 2z.\frac{1}{z}\right] + z + \frac{1}{z} - 1 = 0$
+            $\Rightarrow 8x^3 - 4x^2 -4x + 1 = 0$. Roots of this equation are $\cos \frac{\pi}{7}, \cos
+            \frac{3\pi}{7}$ and $\cos \frac{5\pi}{7}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">316.</span> Solve the equation $z^{10} - 1 = 0$ and deduce
+            that $\sin5\theta = 5\sin\theta\left(1 -
+            \frac{\sin\theta}{\sin^2\frac{\pi}{5}}\right)\left(1 - \frac{\sin\theta}{\sin^2\frac{2\pi}{5}}\right)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Given, $z^{10} - 1 = 0 \Rightarrow
+            z^{10} = 1 = \cos 0 + i \sin 0\therefore z = (\cos 0 + i \sin
+            0)\frac{1}{10} = \cos\frac{2r\pi}{10} + i \sin\frac{2r\pi}{10}$
+            $= \pm 1, \cos\frac{\pi}{5} \pm i\sin\frac{\pi}{5}, \cos\frac{2\pi}{5} \pm i\sin\frac{2\pi}{5},
+            \cos\frac{3\pi}{5} \pm i\sin\frac{3\pi}{5}, \cos\frac{4\pi}{5} \pm i\sin\frac{4\pi}{5}$
+          </p>
+          <p style="font-size:24px">
+            Quadratic equation whose roots are $\pm 1$ is $z^2 - 1 = 0$. And quadratic equation whose roots are
+            $\cos\frac{\pi}{5} \pm \sin\frac{\pi}{5}$ is $z^2 - 2\cos\frac{\pi}{5}z + 1 = 0$. Thus,
+            $z^{10} - 1 = (z^2 - 1)\left(z^2 - 2\cos\frac{\pi}{5}z + 1\right)\left(z^2 - 2\cos\frac{2\pi}{5}z +
+            1\right)\left(z^2 - 2\cos\frac{3\pi}{5}z + 1\right)\left(z^2 - 2\cos\frac{4\pi}{5}z + 1\right)$
+          </p>
+          <p style="font-size:24px">
+            Dividing both sides by $z^5$, we get
+            $z^5 - \frac{1}{z^5} = \left(z - \frac{1}{z}\right)\left(z + \frac{1}{z}
+            - 2\cos\frac{\pi}{5}\right)\left(z + \frac{1}{z}
+            - 2\cos\frac{2\pi}{5}\right)\left(z + \frac{1}{z}
+            - 2\cos\frac{3\pi}{5}\right)\left(z + \frac{1}{z}
+            - 2\cos\frac{4\pi}{5}\right)$
+          </p>
+          <p style="font-size:24px">
+            Putting $z = \cos \theta + i \sin \theta$ in the above equation, so
+            that $z^5 - \frac{1}{z^5} = 2i\sin 5\theta$, we get
+            $2i\sin 5\theta = 2i\sin\theta.2\left(\cos \theta -
+            \cos\frac{\pi}{5}\right)2\left(\cos \theta -
+            \cos\frac{2\pi}{5}\right)2\left(\cos \theta -
+            \cos\frac{3\pi}{5}\right)2\left(\cos \theta - \cos\frac{4\pi}{5}\right)$
+            $\therefore \sin 5\theta = 16 \sin \theta\left(\cos \theta -
+            \cos\frac{\pi}{5}\right)\left(\cos \theta -
+            \cos\frac{2\pi}{5}\right)\left(\cos \theta -
+            \cos\frac{3\pi}{5}\right)\left(\cos \theta - \cos\frac{4\pi}{5}\right)$
+          </p>
+          <p style="font-size:24px">
+            $= 16\sin \theta\left(\cos\theta
+            -\cos\frac{\pi}{5}\right)\left(\cos\theta
+            +\cos\frac{\pi}{5}\right)\left(\cos\theta
+            -\cos\frac{2\pi}{5}\right)\left(\cos\theta +\cos\frac{2\pi}{5}\right)$
+            $= 16\sin \theta\left(\cos^2\theta -
+            \cos^2\frac{\pi}{5}\right)\left(\cos^2\theta -
+            \cos^2\frac{2\pi}{5}\right)$
+            $= 16\sin \theta\left(\sin^2\frac{\pi}{5} -
+            \sin^2\theta\right)\left(\sin^2\frac{2\pi}{5} - \sin^2\theta\right)$
+          </p>
+          <p style="font-size:24px">
+            $= 16\sin\theta\sin^2\frac{\pi}{5}\sin^2\frac{2\pi}{5}\left(1 -
+            \frac{\sin^2\theta}{\sin^2\frac{\pi}{5}}\right)\left(1 -
+            \frac{\sin^2\theta}{\sin^2\frac{2\pi}{5}}\right)$
+            $= 16\sin\theta\sin^2{36^\circ}\sin^2{72^\circ}\left(1 -
+            \frac{\sin^2\theta}{\sin^2\frac{\pi}{5}}\right)\left(1 -
+            \frac{\sin^2\theta}{\sin^2\frac{2\pi}{5}}\right)$
+          </p>
+          <p style="font-size:24px">
+            $= 16\sin\theta\left(\frac{\sqrt{10 - 2\sqrt{5}}}{4}\right)^2\left(\frac{\sqrt{10 +
+                2\sqrt{5}}}{4}\right)^2\left(1 - \frac{\sin^2\theta}{\sin^2\frac{\pi}{5}}\right)\left(1 -
+            \frac{\sin^2\theta}{\sin^2\frac{2\pi}{5}}\right)$
+          
+            Thus, $\sin5\theta = 5\sin\theta\left(1 - \frac{\sin^2\theta}{\sin^2\frac{\pi}{5}}\right)\left(1 -
+            \frac{\sin^\theta}{\sin^2\frac{2\pi}{5}}\right)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">317.</span> Solve the equation $x^7 +1 = 0$ and deduce that
+            $\cos\frac{\pi}{7}\cos\frac{3\pi}{7}\cos\frac{5\pi}{7} = -\frac{1}{8}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Given, $x^7 + 1 = 0$ or $x^7 = -1 = \cos\pi + i \sin\pi$
+            $\therefore x = \left(\cos\pi + i \sin\pi\right)\frac{1}{7} =
+            \cos\frac{2r\pi + \pi}{7} + i \sin \frac{2r\pi + \pi}{7}, r = 0, 1, 2,
+            \ldots, 6$
+          </p>
+          <p style="font-size:24px">
+            $= \cos \frac{\pi}{7} \pm i \sin\frac{\pi}{7}, \cos \frac{2\pi}{7} \pm i
+            \sin\frac{2\pi}{7}, \cos \frac{3\pi}{7} \pm i \sin\frac{3\pi}{7}, \cos
+            \pi + i \sin \pi(= -1)$
+          </p>
+          <p style="font-size:24px">
+            $x^7 + 1 = (x + 1)\left(x^2 - 2\cos\frac{\pi}{7}x + 1\right)\left(x^2 -
+            2\cos\frac{2\pi}{7}x + 1\right)\left(x^2 - 2\cos\frac{3\pi}{7}x +
+            1\right)$. Putting $x = i$, we get
+          </p>
+          <p style="font-size:24px">
+            $i^7 + 1 = (1 +
+            i)\left(-2i\cos\frac{\pi}{7}\right)\left(-2i\cos\frac{2\pi}{7}\right)\left(-2i\cos\frac{3\pi}{7}\right)$
+          </p>
+          <p style="font-size:24px"></p>
+            $1 - i = 8(1 + i)\cos\frac{\pi}{7}\cos\frac{2\pi}{7}\cos\frac{3\pi}{7} = -8(1 -
+            i)\cos\frac{\pi}{7}\cos\frac{2\pi}{7}\cos\frac{3\pi}{7}$
+            $\therefore \cos\frac{\pi}{7}\cos\frac{2\pi}{7}\cos\frac{3\pi}{7} = -\frac{1}{8}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">318.</span> Form the equation whose roots are
+            $\cot^2\frac{\pi}{2n + 1}, \cot^2\frac{2\pi}{2n + 1}, \ldots, \cot^2\frac{n\pi}{2n + 1}$,
+            and hence find the value of $\cot^2\frac{\pi}{2n + 1} + \cot^2\frac{2\pi}{2n + 1} + \ldots +
+            \cot^2\frac{n\pi}{2n + 1}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> $(\cos\alpha + i \sin\alpha)^n =
+            \cos^n\alpha + i{^nC_1}\cos^{n-1}\alpha
+            \sin\alpha + i^2{^nC_2}\cos^{n-2}\alpha \sin^2\alpha + \cdots +
+            i^n{^nCn}\sin^n\alpha$
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow \cos n\alpha + i \sin n\alpha = (\cos^n\alpha -
+            {^nC_2}\cos^{n-2}\alpha \sin^2\alpha) + i({^nC_1}\cos^{n-1}\alpha
+            \sin\alpha)$. Equating imaginary parts, we get
+          </p>
+          <p style="font-size:24px">
+            $\therefore \sin n\alpha = {^nC_1}\cos^{n-1}\alpha \sin\alpha - {}^nC_3\cos^{n-3}\alpha \sin^3\alpha +
+            \cdots$
+            $\therefore \sin (2n+1)\alpha = {}^{2n+1}C_1\cos^{2n}\alpha \sin\alpha - {}^{2n+1}C_3\cos^{2n-2}\alpha
+            \sin^3\alpha + \cdots$
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow \sin (2n+1)\alpha = \sin^{2n+1}\alpha[{^{2n+1}C_1\cot^{2n}}\alpha -
+              {}^{2n+1}C_3\cot^{2n-2}\alpha + \cdots]$
+            $\text{when} \alpha = \frac{\pi}{2n+1}, \frac{2\pi}{2n+1}, \cdots, \frac{n\pi}{2n+1}, \sin(2n+1)\alpha =
+            0$
+          </p>
+          <p style="font-size:24px">
+            $\therefore \cot^2\frac{\pi}{2n+1}, \cot^2\frac{2\pi}{2n+1}, \cdots, \cot^2\frac{n\pi}{2n+1}$ are the
+            roots of the equation. From the second term coefficient we get sum of roots in a polynomial.
+          </p>
+          <p style="font-size:24px">
+            $\therefore \cot^2\frac{\pi}{2n+1}+ \cot^2\frac{2\pi}{2n+1}+ \cdots+ \cot^2\frac{n\pi}{2n+1} =
+            \frac{{}^{2n+1}C_3}{{}^{2n+1}C_1}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">319.</span> If $\theta \neq k\pi$, show that
+            $\cos\theta\sin\theta + \cos^2\theta\sin2\theta + \ldots + \cos^n\theta\sin n\theta =
+            \cot\theta(1 - \cos^n\theta\cos n\theta)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Let $C = \cos\theta \cos\theta +
+            \cos^2\theta \cos 2\theta + \cdots + cos^n\theta \cos n\theta$
+            and
+            $S = \cos\theta \sin\theta + \cos^2\theta \sin 2\theta + \cdots + cos^n\theta \sin n\theta$
+          </p>
+          <p style="font-size:24px">
+            Now, $C + iS = \cos\theta(cos\theta + i \sin\theta) + \cos^2\theta(\cos2\theta + i \sin 2\theta) + \cdots
+            + \cos^n\theta(\cos n\theta + i \sin n\theta)$
+            $= \cos\theta.e^{i\theta} + \cos^2\theta.e^{2i\theta} + \cdots + \cos^n\theta.e^{ni\theta}$
+            $= x + x^2 + \cdots + x^n$, where $x = \cos\theta e^{i\theta}= \frac{x(x^n - 1)}{x - 1} = \frac{\cos\theta
+              e^{i\theta}(\cos^n\theta e^{in\theta} - 1)}{\cos\theta e^{i\theta} - 1}$
+          </p>
+          <p style="font-size:24px">
+            $= \frac{\cos\theta[\cos^n\theta(\cos n\theta + i \sin n\theta) - 1]}{\cos\theta - e^{-i\theta}} =
+            \frac{\cos\theta[(\cos^n\theta\cos n\theta -1) + i cos^n\theta\sin n\theta]}{\cos\theta - (\cos\theta
+              - i\sin\theta)}$
+          </p>
+          <p style="font-size:24px">
+            $= -i \cot\theta(\cos^n\theta \cos n\theta - 1) + i \cos^n\theta \sin n\theta$
+          </p>
+          <p style="font-size:24px">
+            Equating imaginary parts, we get
+            $S = -\cot\theta(\cos^n\theta \cos n\theta - 1) = \cot\theta(1 - \cos^n\theta\cos n\theta)$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">320.</span> Show that $-3 - 4i = 5e^{i(\pi + \tan^{-1}4/3)}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> L.H.S. $= -3 -4i = 5\left(-\frac{3}{5}
+            - i\frac{4}{5}\right) = 5\left(\cos\left(\pi +
+            \tan^{-1}\frac{4}{5}\right) +i \sin\left(\pi + \tan^{-1}\frac{4}{5}\right)\right)$
+          </p>
+          <p style="font-size:24px">
+            $= 5e^{i\left(\pi + \tan^{-1}\frac{4}{5}\right)} =$ R.H.S.
+          </p>
+        </div>
+      </section>
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- Required -->
+  <script src="../../../static/js/webslides.min.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../../../static/js/svg-icons.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        // customised options
+        // • auto-render specific keys, e.g.:
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        // • rendering keys, e.g.:
+        throwOnError: false
+      });
+    });
+  </script>
+</body>
+
+</html>
