@@ -133,7 +133,7 @@
           <p style="font-size:24px">
             <span style="font-weight: bold;">Solution:</span> Let $x^4 + 1 = (x^2 + px + q)(x^2 + p'x + q') = x^4 + (p +
             p')x^3 + (pp' + q + q')x^2 + (pq' + p'q)x +
-            qq'$ which gives us four equations $p + p' = 0, pp' + q + q' = 0, pq' + p'q = 0$ and $qq = 1$.
+            qq'$ which gives us four equations $p + p' = 0, pp' + q + q' = 0, pq' + p'q = 0$ and $qq' = 1$.
           </p>
           <p style="font-size:24px">
             Assuming $p = 0, p' = 0, q + q' = 0, qq' = 1, q^2 = -1, q = \pm i, q' = \mp i$.
@@ -186,8 +186,8 @@
       <section>
         <div class="wrap stide-top">
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Solution:</span> We have $\displaystyle\sum_{k=1}^{n - 1}|A_k|^2 =
-            \sum_{k=1}^{n - 1}A_k\overline{A_k}$.
+            <span style="font-weight: bold;">Solution:</span> We have $\displaystyle\sum_{k=0}^{n - 1}|A_k|^2 =
+            \sum_{k=0}^{n - 1}A_k\overline{A_k}$.
           </p>
           <p style="font-size:24px">
             But $A_k\overline{A_k} = (x + y\epsilon^k + z\epsilon^{2k} + \ldots + w\epsilon^{(n - 1)k})(\overline{x} +
@@ -200,14 +200,14 @@
             1)k}(\overline{x} + \overline{y}\epsilon^{-k} + \cdots + \overline{u}\epsilon^{-(n - 2)k})$
           </p>
           <p style="font-size:24px">
-            Therefore, $\displaystyle\sum_{k=1}^{n - 1}|A_k|^2 = n(|x|^2 + |y|^2 + \cdots + |w|^2) + x\sum_{k=1}^{n -
+            Therefore, $\displaystyle\sum_{k=0}^{n - 1}|A_k|^2 = n(|x|^2 + |y|^2 + \cdots + |w|^2) + x\sum_{k=1}^{n -
             1}(\overline{y}\epsilon^{-k} + \overline{z}\epsilon^{-2k} + \cdots + \overline{w}\epsilon^{-(n - 1)k}) +
-            y\sum_{k=1}^{n - 1}(\overline{x}\epsilon^k + \overline{z}\epsilon^{-k} + \cdots +
-            \overline{w}\epsilon^{-(n - 2)k}) + \cdots + w\sum_{k = 1}^{n - 1}(\overline{x}\epsilon^{(n - 1)k}+
+            y\sum_{k=0}^{n - 1}(\overline{x}\epsilon^k + \overline{z}\epsilon^{-k} + \cdots +
+            \overline{w}\epsilon^{-(n - 2)k}) + \cdots + w\sum_{k = 0}^{n - 1}(\overline{x}\epsilon^{(n - 1)k}+
             \overline{y}\epsilon^{(n - 2)k} + \cdots + \overline{u}\epsilon^k)$
           </p>
           <p style="font-size:24px">
-            But $\displaystyle\sum_{k=1}^{n - 1}\epsilon^{lk} = 0$ if $l$ is not divisible by $n$ from previous
+            But $\displaystyle\sum_{k=0}^{n - 1}\epsilon^{lk} = 0$ if $l$ is not divisible by $n$ from previous
             problem. Therefore all the sums in the right vanish and we get
             $\displaystyle\sum_{k = 0}^{n - 1}|A_k|^2 = n(|x|^2 + |y|^2 + \ldots + |w|^2)$.
           </p>

@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Algebra: Complex Numbers</title>
+  <meta name="description" content="Class 12 Algebra.">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext"
+    rel="stylesheet">
+
+  <!-- CSS WebSlides -->
+  <link rel="stylesheet" type='text/css' media='all' href="../../../static/css/webslides.css">
+  <link rel="stylesheet" type='text/css' media='all' href="../../../static/css/custom.css">
+
+  <!-- Optional - CSS SVG Icons (Font Awesome) -->
+  <link rel="stylesheet" type='text/css' media='all' href="../../../static/css/svg-icons.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+    integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+  <!-- SOCIAL CARDS (ADD YOUR INFO) -->
+
+  <!-- FACEBOOK -->
+  <!--meta property="og:url" content="http://your-url.com/">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy">
+    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma.">
+    <meta property="og:updated_time" content="2017-01-04T17:20:50">
+    <meta property="og:image" content="../../../static/images/share-webslides.jpg"-->
+
+  <!-- TWITTER -->
+  <!--meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@webslides">
+    <meta name="twitter:creator" content="@jlantunez">
+    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy">
+    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use.">
+    <meta name="twitter:image" content="static/images/share-webslides.jpg"-->
+
+  <!-- FAVICONS -->
+  <link rel="shortcut icon" sizes="16x16" href="../../../static/images/favicons/favicon.png">
+  <link rel="shortcut icon" sizes="32x32" href="../../../static/images/favicons/favicon-32.png">
+  <link rel="apple-touch-icon icon" sizes="120x120" href="../../../static/images/favicons/favicon-120.png">
+  <link rel="apple-touch-icon icon" sizes="152x152" href="../../../static/images/favicons/favicon-152.png">
+  <link rel="apple-touch-icon icon" sizes="180x180" href="../../../static/images/favicons/favicon-180.png">
+  <link rel="apple-touch-icon icon" sizes="192x192" href="../../../static/images/favicons/favicon-192.png">
+
+  <!-- Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#333333">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYSBZJJRBL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-DYSBZJJRBL');
+  </script>
+
+</head>
+
+<body>
+  <header role="banner" style="background-color: #eee!important;">
+    <nav role="navigation">
+      <p><a href="/" title="Ashtavakra" style="font-size: 48px; font-weight: 333;">Ashtavakra</a></p>
+    </nav>
+  </header>
+
+  <main role="main">
+    <article id="webslides" class="vertical bg-white">
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">371.</span> If $n$ is even, then prove the identity $\cos\frac{2\pi}{2n +
+            1}\cos\frac{4\pi}{2n + 1}\ldots\cos\frac{2n\pi}{2n + 1} =
+            \frac{(-1)^{n/2}}{2^n}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> This problem can be solved like previous problem.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">372.</span> Prove that if $\cos\alpha + i\sin\alpha$ is the solution of the
+            equation $x^n + p_1x^{n - 1} + \cdots
+            + p_n = 0$, then $p_1\sin\alpha + p_2\sin2\alpha + \cdots + p_n\sin n\alpha = 0(p1, p2, \ldots,
+            p_n\text{ are real})$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Since $\cos\alpha + i\sin\alpha$ is the root of the given
+            equation, we have $\displaystyle\sum_{i =
+            0}^np_k(\cos\alpha + i\sin\alpha)^{n - k} = 0\;\;(p_0 = 1)$
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow \displaystyle(\cos\alpha + i\sin\alpha)^n\sum_{k=0}^np_k(\cos\alpha + i\sin\alpha)^{-k} = 0
+            \Rightarrow
+            \sum_{k= 0}^np_k(\cos\alpha k - i\sin\alpha k) = 0$.
+          </p>
+          <p style="font-size:24px">
+            Hence, $\displaystyle\sum_{k= 0}^np_k\sin\alpha k = p_1\sin\alpha + p_2\sin2\alpha + \cdots + p_n\sin
+            n\alpha = 0$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">373.</span> Prove the identity $\sqrt[3]{\cos\frac{2\pi}{7}} +
+            \sqrt[3]{\cos\frac{4\pi}{7}} + \sqrt[3]{\cos\frac{8\pi}{7}} =
+            \sqrt[3]{\frac{1}{2}(5 - 3\sqrt[3]{7})}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> The roots of the equation $x^7 = 1$ are
+            $\cos\frac{2k\pi}{7} + i\sin\frac{2k\pi}{7}\;\;(k = 0, 1, 2,
+            \ldots, 6)$.
+          </p>
+          <p style="font-size:24px">
+            Therefore, the roots of the equation $x^6 + x^5 + x^4 + x^3 + x^2 + x + 1 = 0$ will be $x_k =
+            \cos\frac{2k\pi}{7} + i\sin\frac{2k\pi}{7}\;\;(k = 1, 2, 3, \ldots, 6)$.
+          </p>
+          <p style="font-size:24px">
+            Putting $x + \frac{1}{x} = y$, then $x^2 + \frac{1}{x^2} = y^2 - 2y$ and $x^3 + \frac{1}{x^3} = y^3 -
+            3y$. Rewriting the above equation $\left(x^3 + \frac{1}{x^3}\right) + \left(x^2 + \frac{1}{x^2}\right) +
+            \left(x + \frac{1}{x}\right) + 1 = 0$.
+          </p>
+          <p style="font-size:24px">
+            Clearly, $x_1 = \overline{x_6}, x_2 = \overline{x_5}, x_3 = \overline{x_4}, x_k + \frac{1}{x_k} = x_k +
+            \overline{x_k} = 2\cos\frac{2k\pi}{7}$.
+          </p>
+          <p style="font-size:24px">
+            Hence we can say that quantities $2\cos\frac{2\pi}{7},
+            2\cos\frac{4\pi}{7}, 2\cos\frac{6\pi}{7}$ are the rootss of the equation $y^3 + y^2 - 2y - 1 = 0$.
+            Let the roots of the cubic equation $x^3 - ax^2 + bx - c = 0$ be $\alpha, \beta, \gamma$. Then $\alpha +
+            \beta + \gamma = a, \alpha\beta + \beta\gamma + \gamma\alpha = b, \alpha\beta\gamma = c$.
+          </p>
+          <p style="font-size:24px">
+            Let the equation, whose roots are $\sqrt[3]{\alpha}, \sqrt[3]{\beta}, \sqrt[3]{\gamma}$, be $x^3 - Ax^2 +
+            Bx - C = 0$. Then,
+            $\sqrt[3]{\alpha} + \sqrt[3]{\beta} + \sqrt[3]{\gamma} = A, \sqrt[3]{\alpha\beta} + \sqrt[3]{\beta\gamma}
+            + \sqrt[3]{\gamma\alpha} = B, \sqrt[3]{\alpha\beta\gamma} = C$.
+          </p>
+          <p style="font-size:24px">
+            We know that $(m + p + q)^3 = m^3 + p^3 + q^3 + 3(m + p + q)(mp + mq + pq) - 3mpq$. Substituting
+            $\sqrt[3]{\alpha}, \sqrt[3]{\beta}, \sqrt[3]{\gamma}$ and $\sqrt[3]{\alpha\beta}, \sqrt[3]{\beta\gamma},
+            \sqrt[3]{\gamma\alpha}$ for $m, p, q$ we obtain
+          </p>
+          <p style="font-size:24px">
+            $A^3 = a + 3AB - 3C, B^3 = b + 3BCA - 3C^2$. In our case, $a = -1, b = -2, c = 1, C = 1$. Hence, $A^3 = 3AB
+            - 4, B^3 = 3AB - 5$.
+            Multiplying these equations and putting $AB = z$, we find
+          </p>
+          <p style="font-size:24px">
+            $z^3 - 9z^2 + 27z - 20 = 0 \Rightarrow (z - 3)^3 + 7 = 0 \Rightarrow z = 3 - \sqrt[3]{7}$
+            But $A^3 = 3z - 4 \Rightarrow A = \sqrt[3]{5 - 3\sqrt[3]{7}}$ and hence
+          </p>
+          <p style="font-size:24px">
+            $\sqrt[3]{\cos\frac{2\pi}{7}} + \sqrt[3]{\cos\frac{4\pi}{7}} + \sqrt[3]{\cos\frac{8\pi}{7}} =
+            \sqrt[3]{\frac{1}{2}(5 - 3\sqrt[3]{7})}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">374.</span> Prove the identity $\sqrt[3]{\cos\frac{2\pi}{9}} +
+            \sqrt[3]{\cos\frac{4\pi}{9}} + \sqrt[3]{\cos\frac{8\pi}{9}} =
+            \sqrt[3]{\frac{1}{2}(3\sqrt[3]{9} - 6)}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> This problem can be solved like previous problem.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">375.</span> Let $A = x_1 + x_2\omega + x_3\omega^2, B = x_1 + x_2\omega^2 +
+            x_3\omega,$ where $\omega, \omega^2$ are complex roots of
+            unity and $x_1, x_2, x_3$ are roots of the cubic equation $x^3 + px + q = 0$. Prove that $A^3$ and $B^3$ are
+            the roots of the
+            quadratic equation $x^2 + 27qx - 27p^3 = 0$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Squaring the first trimonial, $A^2 = (x_1^2 + 2x_2x_3) +
+            (x_3^2 + 2x_1x_2)\omega + (x_2^2 +
+            2x_1x_3)\omega^2$.
+          </p>
+          <p style="font-size:24px">
+            Then $A^3 = (x_1^2 + x_2^2 + x_3^2 + 6x_1x_2x_3) + (3x_1^2x_2 + 3x_2^2x_1 + 3x_2^2x_3)\omega + (3x_1^2x_3
+            + 3x_2^2x_1 + 3x_3^2x_2)\omega^2$
+          </p>
+          <p style="font-size:24px">
+            Putting $3\alpha = 3x_1^2x_2 + 3x_2^2x_1 + 3x_2^2x_3$ and $3\beta = 3x_1^2x_3 + 3x_2^2x_1 + 3x_3^2x_2$.
+          </p>
+          <p style="font-size:24px">
+            Now $x_1^3 + x_2^3 + x_3^3 = -(px_1 + q) - (px_2 + q) - (px_3 + q) = -3q$ since $x_1 + x_2 + x_3 =
+            0$. Moreover, $x_1x_2x_3 = -q$, therefore
+          </p>
+          <p style="font-size:24px">
+            $A^3 = -9q + 3\alpha\omega + 3\beta\omega^2$, we also find $B^3 = -9q + 3\alpha\omega^2 + 3\beta\omega$.
+            Hence, $A^3 + B^3 = -18q - 3\alpha - 3\beta = -27q$, and similarly, $A^3B^3 = -27p^3$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">376.</span> Solve the equation $\frac{(5x^4 + 10x^2 + 1)(5a^4 + 10a^2 +
+            1)}{(x^4 + 10x^2 +1)(a^4 + 10a^2 + 5)} =
+            ax$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> Let $f(x) = \frac{5x^4 + 10x^2 + 1}{x^4 + 10x^2 + 5}$ then
+            the equation takes the form $f(x).f(a) =
+            ax$.
+          </p>
+          <p style="font-size:24px">
+            $x - f(x) = \frac{(x - 1)^5}{x^4 + 10x^2 + 5}$ and $x + f(x) = \frac{(x + 1)^5}{x^4 + 10x^2 +
+            5}$. Dividing,
+          </p>
+          <p style="font-size:24px">
+            $\frac{x - f(x)}{x + f(x)} = \left(\frac{x - 1}{x + 1}\right)^5$. Let $\frac{x - 1}{x + 1} = y$ and
+            $\frac{a - 1}{a + 1} = b$.
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow x - f(x) = y^5x + y^5f(x), x(1 - y^5) = f(x)(1 + y^5)\Rightarrow \frac{f(x)}{x} = \frac{1 -
+            y^5}{1 + y^5}$.
+          </p>
+          <p style="font-size:24px">
+            Similarly, $\frac{f(a)}{a} = \frac{1 - b^5}{1 + b^5}$. So we can write the equation as $\frac{1 - y^5}{1 +
+            y^5} = \frac{1 + b^5}{1 - b^5}\Rightarrow y^5 = -b^5$.
+          </p>
+          <p style="font-size:24px">
+            The last equation has five roots. $y_k = -b\epsilon^k$, where $\epsilon = \cos\frac{2\pi}{5} +
+            i\sin\frac{2\pi}{5}$.
+          </p>
+          <p style="font-size:24px">
+            But $x = \frac{1 + y}{1 - y}\Rightarrow x_k = \frac{(a + 1) - (a - 1)\epsilon^k}{(a + 1) + (a -
+            1)\epsilon^k} = \frac{\cos\frac{k\pi}{5} - ia\sin\frac{k\pi}{5}}{a\cos\frac{k\pi}{5} -
+            i\sin\frac{k\pi}{5}}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">377.</span> Find the magnitude of the sum $S = {}^nC_1 - 3.{}^nC_3 +
+            3^2.{}^nC_5
+            - 3^3.{}^nC_7 + \cdots$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> $\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)^n =
+            \cos\frac{2n\pi}{3} + i\sin\frac{2n\pi}{3}$
+          </p>
+          <p style="font-size:24px">
+            Further $\left(-\frac{1}{2} + i\frac{\sqrt{3}}{2}\right)^n = \frac{(-1)^n}{2^n}(1 - i\sqrt{3})^n =
+            \frac{(-1)^n}{2^n}[1 + {}^nC_1(-i\sqrt{3}) + {}^nC_2(-i\sqrt{3})^2 + {}^nC_3(-i\sqrt{3})^3 + \cdots]$
+          </p>
+          <p style="font-size:24px">
+            $= \frac{(-1)^n}{2^n}[1 - 3.{}^nC_2 + \cdots] -i\sqrt{3}[{}^nC_1 -3.{}^nC_3 + 3^2.{}^nC_5 - 3^3.{}^nC_7 +
+            \cdots]$
+          </p>
+          <p style="font-size:24px">
+            Equating coefficient of $i$ in both the equations, $S = (-1)^{n +
+            1}\frac{2^n}{\sqrt{3}}\sin\frac{2n\pi}{3}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">378.</span> Find the magnitude of the follwing sums:
+            $$\sigma = 1 - {}^nC_2 + {}^nC_4 - {}^nC_6 + \cdots$$
+            $$\sigma' = {}^nC_1 - {}^nC_3 + {}^nC_5 - {}^nC_7 + \cdots$$
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px">
+            <span style="font-weight: bold;">Solution:</span> We have $(1 + i)^n = 1 + {}^nC_1 i + {}^nC_2 i^2 + {}^nC_3
+            i^3 + \cdots = 1 + {}^nC_1 i - {}^nC_2 - {}^mC_3
+            i + \cdots$
+          </p>
+          <p style="font-size:24px">
+            But $1 + i = \sqrt{2}\left(\cos\frac{\pi}{4} + i\sin\frac{\pi}{4}\right)$
+          </p>
+          <p style="font-size:24px">
+            Therefore, $\sigma = 1 - {}^nC_2 + {}^nC_4 - {}^nC_6 + \cdots = 2^{\frac{n}{2}}\cos\frac{n\pi}{4}$,
+          </p>
+          <p style="font-size:24px">
+            $\sigma' = {}^nC_1 - {}^nC_3 + {}^nC_5 - {}^nC_7 + \cdots = 2^{\frac{n}{2}}\sin\frac{n\pi}{4}$.
+          </p>
+          <p style="font-size:24px">
+            Hence, if $n = 0(\mod 4)$ i.e. $n = 4m\;\forall\;m\in\mathbb{I}$, then $\sigma = (-1)^m2^{2m}, \sigma' =
+            0$. If $n = 4m + 1$, then $\sigma = \sigma' = (-1)^m2^{2m}$, for $n = 4m + 2, \sigma = 0, \sigma' =
+            (-1)2^{2m + 1}$ and for $n = 4n + 3, \sigma = (-1)^{m + 1}2^{2m + 1}, \sigma' = (-1)^m2^{2m + 1}$.
+          </p>
+        </div>
+      </section>
+    </article>
+    <!-- end article -->
+  </main>
+  <!-- end main -->
+
+  <!-- Required -->
+  <script src="../../../static/js/webslides.min.js"></script>
+  <script>
+    window.ws = new WebSlides();
+  </script>
+
+  <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+  <script defer src="../../../static/js/svg-icons.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+    integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+    crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      renderMathInElement(document.body, {
+        // customised options
+        // • auto-render specific keys, e.g.:
+        delimiters: [
+          { left: '$$', right: '$$', display: true },
+          { left: '$', right: '$', display: false },
+          { left: '\\(', right: '\\)', display: false },
+          { left: '\\[', right: '\\]', display: true }
+        ],
+        // • rendering keys, e.g.:
+        throwOnError: false
+      });
+    });
+  </script>
+</body>
+
+</html>
