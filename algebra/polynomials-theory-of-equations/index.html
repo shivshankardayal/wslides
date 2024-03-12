@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- SEO -->
-  <title>Algebra: Logarithm</title>
+  <title>Algebra: Polynomials and Theory of Equations</title>
   <meta name="description" content="Class 12 Algebra.">
 
   <!-- Google Fonts -->
@@ -107,7 +107,7 @@
             If $f(x)$ is a polynomial of degree $p$, and $g(x)$ is a polynomial of degree $q$, then
           </p>
           <ol>
-            <li style="font-size:24px">$f(x)\pm g(x)$ is a polymial of degree $\max(p, q)$,</li>
+            <li style="font-size:24px">$f(x)\pm g(x)$ is a polynomial of degree $\max(p, q)$,</li>
             <li style="font-size:24px">$f(x).g(x)$ is a polynomial of degree $p + q$, and</li>
             <li style="font-size:24px"> $f(g(x))$ is a polynomial of degree $p.q$, where $g(x)$ is not a constant
               polynomial.</li>
@@ -161,7 +161,7 @@
             Every polynomial of degree greater or equal than one has at least one root/solution/zero in the complex
             numbers. We can also say that for $f(x)$ introduced in the beginning with $n\geq 1$, then there exists a
             $z\in\mathbb{C}$, such that
-            $$f(z) = a_nz^n + a_z^{n - 1} + \cdots + a_1z + a_0 = 0.$$
+            $$f(z) = a_nz^n + a_{n - 1}z^{n - 1} + \cdots + a_1z + a_0 = 0.$$
             Now it is trivial to deduce that an $n$th degree polynomial will have exactly $n$ roots i.e. $f(x) = a(x -
             \alpha_1)(x - \alpha_2)\cdots(x - \alpha_{n - 1})(x - \alpha_n)$.
           </p>
@@ -191,7 +191,7 @@
               identically $0$.</em>
           </p>
           <p style="font-size:24px">
-            <span style="font-weight: bold;">Proof:</span> We have $f(x) = a(x - \alpha_1)(x - \alpha_2)\cdots(c -
+            <span style="font-weight: bold;">Proof:</span> We have $f(x) = a(x - \alpha_1)(x - \alpha_2)\cdots(x -
             \alpha_{n - 1})(x - \alpha_n)$, and we let that it
             vanishes for $\alpha_{n + 1}$, then
           </p>
@@ -213,6 +213,154 @@
             Let $h(x) = f(x) - g(x)$. This implies that the degree of $h(x)$ is at most $q$ and it vanishes for $q +
             1$ distinct values of $x$. $\Rightarrow h(x) = f(x) - g(x) = 0 \Rightarrow f(x) = g(x)$.<span
               class="alignright">$\square$</span>
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px"><span style="font-weight: bold;">Corollary:</span>
+            If $f(x)$ is a periodic polynomial with some constant period $T$ i.e. $f(x) = f(x +
+            T)\;\forall\;x\in\mathbb{R}$, then $f(x) = c$.
+          </p>
+          <p style="font-size:24px"><span style="font-weight: bold;">Proof:</span>
+            Let $f(0) = x$, then $f(0) = f(T) = f(2T) = \cdots = c$. Thus, polynomials $f(x)$ and constant polynomial $g(x) = c$ take same
+            values for infinite number of points. Hence, they must be identical.
+          </p>
+          <h3 style="margin-bottom: 10px;">Rational Root Theorem</h3>
+          <p style="font-size:24px">
+            <em>If $p, q\in\mathbb{Z}, q\neq = 0$ such that they are relatively prime i.e. $gcd(p, q) = 1$, then if
+              $\frac{p}{q}$ is a root of the equation $a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0 = 0$, where
+              $a_0,
+              a_1, \ldots, a_{n - 1}, a_n \in\mathbb{I}$ and $a_n = 0$, then $p$ is a divisor of $a_0$ and $q$ that of
+              $a_n$.
+            </em>
+          </p>
+          <p style="font-size:24px"><span style="font-weight: bold;">Proof:</span>
+            Since $\frac{p}{q}$ is a root, we have
+            $$a_n\left(\frac{p}{q}\right)^n + a_{n - 1}\left(\frac{p}{q}\right)^{n - 1} + \cdots +
+            a_1\frac{p}{q} + a_0 = 0$$
+            $\Rightarrow a_np^n + a_{n - 1}p^{n - 1}q + \cdots + a_1q^{n - 1}p + a_0q^n = 0$
+          </p>
+          <p style="font-size:24px">
+            $\Rightarrow a_{n - 1}p^{n - 1} + a_{n - 1}p^{n - 2}q + \cdots + a_1pq^{n - 2} + a_0q^{n - 1} =
+            -a_n\frac{p^n}{q}$
+          </p>
+          <p style="font-size:24px">
+            Everything on L.H.S. is integer and $p, q$ are relatively prime therefore $q$ must divide $a_n$.
+            Similalry, it can be proven that $a_0$ is divisible by $q$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <p style="font-size:24px"><span style="font-weight: bold;">Corollary(Integer Root Theorem):</span>
+            If roots of $x^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0 = 0$, where $0\leq i\leq n- 1$ are integers
+            and coefficients are also integer, are integer then all the roots divide $a_0$.
+          </p>
+          <p style="font-size:24px"><span style="font-weight: bold;">Proof:</span>
+            This corollary is a direct result from previous corollary.
+          </p>
+          <h3 style="margin-bottom: 10px;">Vieta's Relations</h3>
+          <p style="font-size:24px">
+            If $\alpha_1, \alpha_2, \ldots, \alpha_n$ are $n$ roots of the equation $a_nx^n + a_{n - 1}x^{n - 1} +
+            \cdots + a_1x + a_0 = 0$, then $\displaystyle\sum_{i=0}^n\alpha_i = -\frac{a_{n - 1}}{a_n}, \sum_{1\leq
+            i\leq j\leq n}\alpha_i\alpha_j = \frac{a_{n - 2}}{a_n}, \sum_{1\leq i\leq j\leq k\leq
+            n}\alpha_i\alpha_j\alpha_n = -\frac{a_{n - 3}}{a_n}, \cdots, \alpha_1\alpha_2\ldots\alpha_n =
+            (-1)^n\frac{a_0}{a_n}$.
+          </p>
+          <p style="font-size:24px">
+            These relations are denoted as $\sigma_1, \sigma_2, \ldots, \sigma_n$ as well.
+            These relations are known as Vieta's relations.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <h3 style="margin-bottom: 10px;">Symmetric Functions</h3>
+          <p style="font-size:24px">
+            Consider functions $a + b + c, a^2 + b^2 + c^2, (a - b)^2 + (b - c)^2 + (c - a)^2,$ and $(a + b)(b + c)(c +
+            a)$ in which the terms can be interchanged without changing the overall function. Functions demonstrating
+            such behavior are known as {\it symmetric} functions.
+          </p>
+          <p style="font-size:24px">
+            In general, if a function is of $n$ variables then this definition warrants that any two variable can be
+            interchanged without changing the function. Thus, we see that Vieta's relations are symmetric functions.
+          </p>
+          <h3 style="margin-bottom: 10px;">Common Roots of Polynomial Equations</h3>
+          <p style="font-size:24px">
+            If $\alpha$ is a common root of the polynomial equations $f(x) = 0$ and $g(x) = 0$, if and only if, it is a
+            root of the HCF of the polynomilas $f(x)$ and $g(x)$. The HCF of two polynomials can be found exactly like
+            HCF of two integers using Euclid's method.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <h3 style="margin-bottom: 10px;">Irreducibility of Polynomials</h3>
+          <p style="font-size:24px">
+            When we talk of irreducability we talk in terms of set to which the coefficients of the polynomial
+            belong. The set could be $\mathbb{Q}, \mathbb{Z}, \mathbb{R}$ or $\mathbb{C}$.
+          </p>
+          <p style="font-size:24px">
+            An irreducible polynomial is, a non-constant polynomial which cannot have non-constant factors in the same
+            set as coefficients of the polynomial itself.
+          </p>
+          <p style="font-size:24px">
+            Consider following example:
+          </p>
+          <ol>
+            <li style="font-size:24px">$x^2 - 5x + 6 = (x - 2)(x - 3)$</li>
+            <li style="font-size:24px">$x^2 - \frac{4}{9} = \left(x - \frac{2}{3}\right)\left(x + \frac{2}{3}\right)$
+            </li>
+            <li style="font-size:24px">$x^2 - 5 = (x - \sqrt{5})(x + \sqrt{5})$</li>
+            <li style="font-size:24px">$x^2 + 9 = (x + 3i)(x - 3i)$</li>
+          </ol>
+          <p style="font-size:24px">
+            Over $\mathbb{I}$, first is reducible while other are irreducible, over $\mathbb{Q}$ first two are reducible
+            bit last two are not, over $\mathbb{R}$, first three are reducible but last one is not and over $\mathbb{C}$
+            all are reducible.
+          </p>
+          <h3 style="margin-bottom: 10px;">Gausss' Lemma</h3>
+          <p style="font-size:24px">If a polynomial with integer coefficients is reducible over $\mathbb{Q}$, then it is
+            reducible over
+            $\mathbb{Z}$.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="wrap stide-top">
+          <h3 style="margin-bottom: 10px;">Eisenstein's Irreducibility Criterion Theorem</h3>
+          <p style="font-size:24px">
+            <em>Consider the polynomial $f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \cdots + a_1x + a_0$ with integer
+              coefficients. If there exists a prime $p$ such that the following three conditions apply
+              <ol>
+                <li style="font-size:24px">$p$ divides each $a_i$ for $0\leq i < n$,</li>
+                <li style="font-size:24px">$p$ does not divide $a_n$, and</li>
+                <li style="font-size:24px">$p^2$ does not divide $a_0$,</li>
+              </ol>
+              <span style="font-size:24px">then $f(x)$ is irreducible over rational numbers and integers.</span>
+            </em>
+          </p>
+          <p style="font-size:24px"><span style="font-weight: bold;">Proof:</span>
+            If possible, let us assume that $f(x) = g(x).h(x)$ such that $g(x) = b_kx^k + b_{k - 1}x^{k - 1} + \cdots +
+            b_1x + b_0$ and $h(x) = c_lx^l + c_{l - 1}x^{l - 1} + \cdots + c_1 + c_0$, where $b_i,
+            c_i\in\mathbb{Z}\;\forall\;i = 0, 1, 2, \ldots; b_k\neq =, c_l\neq 0; 1\leq k, l\leq n - 1$.
+          </p>
+          <p style="font-size:24px">
+            Comparing leading coefficient on both sides, we have $a_n = b_kc_l$. As $p\nmid a_n\Rightarrow p\nmid
+            b_kc_l\Rightarrow p\nmid b_k$ and $p\nmid c_l$.
+          </p>
+          <p style="font-size:24px">
+            Similarly, $a_0 = b_0c_0$. As $p|a_0$ and $p^2\nmid a_0\Rightarrow p|b_0c_0$, but both $b_0$ and $c_0$
+            cannot be divided by $p$. Without loss of generality, we suppose $p|b_0$ and $p\nmid c_0$. Suppose $i$ be
+            the smallest index such that $b_i$ is not divisible by $p$. There is such an index $i$ since $p\nmid b_k$,
+            where $1\leq i\leq k$. Depending on $i$ and $k$, for $i\leq k, a_i = b_ic_0 + b_{i-1}c_1 + \cdots + b_0c_i$
+            and for $i &gt; k, a_i = b_ic_0 + b_{i-1}c_1 + \cdots + b_{i-k}c_k$.
+          </p>
+          <p style="font-size:24px">
+            We have $p|a_i$ and by supposition $p$ divides each one of $b_0, b_1, \ldots, b_{i - 1}\Rightarrow
+            p|b_ic_0$. But $p\nmid c_0 \Rightarrow p|b_i$, which is a contradiction, and therefore, $f(x)$ is
+            irreducible.
           </p>
         </div>
       </section>
